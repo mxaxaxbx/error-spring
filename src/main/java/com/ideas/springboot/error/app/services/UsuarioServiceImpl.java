@@ -29,7 +29,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 		Usuario resultado = null;
 		
 		for(Usuario u : this.lista ) {
-			if( u.getId().equals( id ) ) {
+			if( u.getId().equals( id ) ) { // usar operado == en integer referencia y .equals en clase valor de obj Integer 
 				resultado = u;
 				break;
 			}
